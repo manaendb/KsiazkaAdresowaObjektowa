@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1706015518 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1704723426 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1706015599 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1706015504 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedzer.h"
+	"AdresatMenedzer.h"
+
+1704816546 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\uzytkownik.h
+	<iostream>
+
+1706014385 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"Uzytkownik.h"
+	"PlikZUzytkownikami.h"
+	"MetodyPomocnicze.h"
+	"AdresatMenedzer.h"
+
+1705923961 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1705922409 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\metodypomocnicze.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<fstream>
+
+1705918359 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	"Uzytkownik.h"
+	"MetodyPomocnicze.h"
+
+1705924615 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
+1706014399 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
+1705066871 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\adresat.cpp
+	"Adresat.h"
+
+1705603372 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\adresat.h
+	<iostream>
+
+1706013659 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\adresatmenedzer.cpp
+	"AdresatMenedzer.h"
+
+1706013544 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\adresatmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"Adresat.h"
+	"PlikZAdresatami.h"
+	"MetodyPomocnicze.h"
+
+1705663124 c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\plikzadresatami.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+
+1705924615 source:c:\users\manae\documents\c++\obiektowka ksiazka adresowa od artura\plikzadresatami.cpp
+	"PlikZadresatami.h"
+
