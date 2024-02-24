@@ -8,23 +8,32 @@
 
 #include "Adresat.h"
 #include "MetodyPomocnicze.h"
+#include "PliikTekstowy.h"
 
 using namespace std;
 
-class PlikZAdresatami
+class PlikZAdresatami : public PlikTekstowy
 {
-    const string nazwaPlikuZAdresatami;
+    //const string NAZWA_PLIKU_Z_ADRESATAMI;
+    //const string NAZWA_TYMCZASOWEGO_PLIKU_Z_ADRESATAMI;
     int idOstatniegoAdresata;
 
     Adresat pobierzDaneAdresata(string daneJednegoUzytkownikaOddzielonePionowymiKreskami);
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
+    void usunPlik(string nazwaPlikuZRozszerzeniem);
+    void zmienNazwePliku(string staraNazwa, string nowaNazwa);
 
 public:
-    PlikZAdresatami(string NAZWAPLIKUZADRESATAMI) : nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI) {}; //stworzenie konstruktora //dodano liste inicjalizacyjna, bez tego nie mozna tworzyc stalych const w konstruktorze - konieczne na koncu cialo konstruktora {}
-    void dopiszAdresataDoPliku(Adresat adresat);
+    //PlikZAdresatami(string nazwaPlikuZAdresatami) : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami),NAZWA_TYMCZASOWEGO_PLIKU_Z_ADRESATAMI("Adresaci_tymczasowo.txt") {
+    PlikZAdresatami(string nazwaPlikuZAdresatami) : PlikTekstowy(nazwaPlikuZAdresatami,"Adresaci_tymczasowo.txt") {
+        idOstatniegoAdresata = 0;
+    }; //stworzenie konstruktora //dodano liste inicjalizacyjna, bez tego nie mozna tworzyc stalych const w konstruktorze - konieczne na koncu cialo konstruktora {}
+    bool dopiszAdresataDoPliku(Adresat adresat);
     vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
+    void usunAdresataZPliku(Adresat usuwanyAdresat);
+    void przepisanieEdytowanegoAdresataDoPliku(Adresat edytowanyAdresat);
 
     int pobierzIdOstatniegoAdresata();
 };

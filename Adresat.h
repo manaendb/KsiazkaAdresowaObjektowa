@@ -16,6 +16,17 @@ class Adresat
     string adres;
 
 public:
+    Adresat(int id = 0, int idUzytkownika = 0, string imie = "", string nazwisko = "", string numerTelefonu = "", string email = "",string adres = "") //gdyby nie bylo wskaznika this, to trzeba by bylo - Adresat(int idNowe=0, nie id = 0
+    // Jesli ktos stworzy obiekt adresat bez parametrow, to wtedy program wykorzystuje wartosci podane przez nas powyzej
+    {
+        this->id = id;                                //wskaznik this -> wskazuje na skladowe danej klasy
+        this->idUzytkownika = idUzytkownika;
+        this->imie = imie;
+        this->nazwisko = nazwisko;
+        this->numerTelefonu = numerTelefonu;
+        this->email = email;
+        this->adres = adres;
+    }
     void ustawId(int noweId);
     void ustawIdUzytkownika(int noweIdUzytkownika);
     void ustawImie(string noweImie);
